@@ -3,8 +3,11 @@ import { MdAddCircleOutline } from "react-icons/md";
 
 const CreateDocument = () => {
   return (
-    <div className=" flex justify-center">
-      <form action="" className="w-1/3 bg-white p-16 mt-10 rounded-lg">
+    <div className=" flex justify-center max-md:px-4">
+      <form
+        action=""
+        className="w-1/3 bg-white p-16 mt-10 rounded-lg max-md:w-full"
+      >
         <h1 className="text-2xl mb-10">Create Document</h1>
         <div className="grid grid-rows-3 grid-flow-col gap-5  items-center">
           <label htmlFor="">Upload Document:</label>

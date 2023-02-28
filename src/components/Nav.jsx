@@ -16,7 +16,7 @@ const Nav = () => {
         <Link to="/">
           <img src={navIcon} alt="" />
         </Link>
-        <div className="relative flex w-1/3">
+        <div className="relative flex w-1/3 max-md:hidden">
           <input
             type="text"
             className="px-6 h-10 border-none outline-0 w-full rounded-lg shadow-lg"
@@ -39,7 +39,7 @@ const Nav = () => {
             </span>
           </li>
           <li className="flex justify-center items-center text-white gap-4 cursor-pointer">
-            <span>Paul Leandro Lanot</span>
+            <span className=" max-md:hidden">Paul Leandro Lanot</span>
             <span>
               <BsChevronDown />
             </span>

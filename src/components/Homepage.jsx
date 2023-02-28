@@ -5,7 +5,12 @@ import {
   MdPictureAsPdf,
   MdOutlineNavigateNext,
 } from "react-icons/md";
-import { AiFillNotification } from "react-icons/ai";
+import { AiFillNotification, AiOutlineDashboard } from "react-icons/ai";
+import { IoDocumentsSharp } from "react-icons/io5";
+import { TbGps } from "react-icons/tb";
+import { GoSettings } from "react-icons/go";
+import { HiOutlineUsers } from "react-icons/hi";
+import { GiHouseKeys } from "react-icons/gi";
 import Calendar from "react-awesome-calendar";
 import AvatarImg from "../assets/avatar.jpg";
 
@@ -13,7 +18,7 @@ const Homepage = () => {
   const date = new Date().toDateString();
   return (
     <div className="  flex bg-gradient-to-r from-cyan-500 to-[#C00676]">
-      <div className="sidenav w-1/4 bg-[#274156]">
+      <div className="sidenav w-1/4 bg-[#274156] max-md:hidden">
         <div className="w-full h-40 bg-bg-sidenav flex p-10 gap-8 items-center">
           <img src={AvatarImg} alt="" className="rounded-full w-16 h-16" />
           <div className="flex flex-col text-white">
@@ -22,25 +27,41 @@ const Homepage = () => {
           </div>
         </div>
         <ul>
-          <li className="w-full bg-slate-50">Dashboard</li>
-          <li className="w-full bg-slate-50">All Documents</li>
-          <li className="w-full bg-slate-50">Track Documents</li>
+          <li className="w-full flex items-center gap-2 py-3 px-16 text-lg font-bold text-white bg-opacity-10 bg-white">
+            <AiOutlineDashboard className="text-2xl" /> Dashboard
+          </li>
+          <li className="w-full flex items-center gap-2 py-3 px-16 text-lg font-bold text-white">
+            <IoDocumentsSharp className="text-2xl" />
+            All Documents
+          </li>
+          <li className="w-full flex items-center gap-2 py-3 px-16 text-lg font-bold text-white">
+            <TbGps className="text-2xl" />
+            Track Documents
+          </li>
         </ul>
-        <ul>
-          <li className="w-full bg-slate-50">Settings</li>
-          <li className="w-full bg-slate-50">Dashboard</li>
-          <li className="w-full bg-slate-50">Users</li>
-          <li className="w-full bg-slate-50">Change Password</li>
+        <ul className="mt-8">
+          <li className="w-full flex items-center gap-2 py-3 px-8 text-lg font-bold text-white">
+            <GoSettings className="text-2xl" />
+            Settings
+          </li>
+          <li className="w-full flex items-center gap-2 py-3 px-16 text-lg font-bold text-white">
+            <HiOutlineUsers className="text-2xl" />
+            Users
+          </li>
+          <li className="w-full flex items-center gap-2 py-3 px-16 text-lg font-bold text-white">
+            <GiHouseKeys className="text-2xl" />
+            Change Password
+          </li>
         </ul>
       </div>
-      <div className="w-full mt-24  px-36 ">
+      <div className="w-full mt-24  px-36 max-md:px-4 ">
         <div className="flex flex-col items-center text-white ">
           <p className="font-bold  text-sm"> {date}</p>
           <p className="font-bold text-2xl"> Good morning, Paul</p>
         </div>
 
-        <div className="flex mt-24 justify-evenly">
-          <div className="flex  items-center justify-center">
+        <div className="flex mt-24 justify-evenly max-md:flex-col max-md:justify-left">
+          <div className="flex  items-center justify-center max-md:items-left max-md:justify-left">
             <div className="z-10 rounded-full h-24 w-24 bg-gray-500"></div>
             <div className="z-0 rounded-[50px] h-20 w-80 bg-white  m-[-80px] flex justify-between items-center drop-shadow-lg">
               <span className="text-lg font-bold text-slate-500 ml-28">
@@ -142,8 +163,8 @@ const Homepage = () => {
             </li>
           </ol>
         </nav>
-        <div className="flex gap-2">
-          <div className="p-10 bg-white rounded-lg w-1/2  mt-10">
+        <div className="flex gap-2 max-md:flex-col">
+          <div className="p-10 bg-white rounded-lg w-1/2  mt-10 max-md:w-full">
             <h1 className=" font-bold">Documents</h1>
             <ul className="flex items-center flex-col gap-6">
               <li className=" w-full">
@@ -366,7 +387,7 @@ const Homepage = () => {
               </li>
             </ul>
           </div>
-          <div className="w-1/2 mt-10 flex flex-col gap-4">
+          <div className="w-1/2 mt-10 flex flex-col gap-4 max-md:w-full">
             <div className="p-10 bg-white rounded-lg h-full">
               <Calendar className="w-8 h-8" />
             </div>
