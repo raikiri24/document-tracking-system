@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         "bg-sidenav": "url('./src/assets/bg-sidenav.png')",
       },
+      fontFamily: {
+        poppins: ["Rajdhani", "sans-serif"],
+      },
     },
   },
   plugins: [],
