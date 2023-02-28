@@ -11,7 +11,6 @@ import { TbGps } from "react-icons/tb";
 import { GoSettings } from "react-icons/go";
 import { HiOutlineUsers } from "react-icons/hi";
 import { GiHouseKeys } from "react-icons/gi";
-import Calendar from "react-awesome-calendar";
 import AvatarImg from "../assets/avatar.jpg";
 
 const Homepage = () => {
@@ -388,9 +387,7 @@ const Homepage = () => {
             </ul>
           </div>
           <div className="w-1/2 mt-10 flex flex-col gap-4 max-md:w-full">
-            <div className="p-20 bg-white rounded-lg h-full max-md:p-8">
-              <Calendar className="w-8 h-8" />
-            </div>
+            <div className="p-20 bg-white rounded-lg h-full max-md:p-8"></div>
             <div className="p-10 bg-white rounded-lg h-96"></div>
           </div>
         </div>
