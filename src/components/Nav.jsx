@@ -12,7 +12,7 @@ import ViewDocument from "./ViewDocument";
 const Nav = () => {
   return (
     <>
-      <div className="bg-[#66A7A3] flex place-items-center justify-between px-8">
+      <div className="bg-[#66A7A3] flex place-items-center justify-between px-8 max-md:px-0">
         <Link to="/">
           <img src={navIcon} alt="" />
         </Link>
