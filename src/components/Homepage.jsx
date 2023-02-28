@@ -60,7 +60,7 @@ const Homepage = () => {
           <p className="font-bold text-2xl"> Good morning, Paul</p>
         </div>
 
-        <div className="flex mt-24 justify-evenly max-md:flex-col max-md:justify-left">
+        <div className="flex mt-24 justify-evenly  max-md:px-4 max-md:items-start max-md:flex-col max-md:gap-2">
           <div className="flex  items-center justify-center max-md:items-left max-md:justify-left">
             <div className="z-10 rounded-full h-24 w-24 bg-gray-500"></div>
             <div className="z-0 rounded-[50px] h-20 w-80 bg-white  m-[-80px] flex justify-between items-center drop-shadow-lg">
@@ -72,7 +72,7 @@ const Homepage = () => {
               </span>
             </div>
           </div>
-          <div className="flex  items-center justify-center">
+          <div className="flex  items-center justify-center max-md:items-left max-md:justify-left">
             <div className="z-10 rounded-full h-24 w-24 bg-gray-500"></div>
             <div className="z-0 rounded-[50px] h-20 w-80 bg-white  m-[-80px] flex justify-between items-center drop-shadow-lg">
               <span className="text-lg font-bold text-slate-500 ml-28">
@@ -83,7 +83,7 @@ const Homepage = () => {
               </span>
             </div>
           </div>
-          <div className="flex  items-center justify-center">
+          <div className="flex  items-center justify-center max-md:items-left max-md:justify-left">
             <div className="z-10 rounded-full h-24 w-24 bg-gray-500"></div>
             <div className="z-0 rounded-[50px] h-20 w-80 bg-white  m-[-80px] flex justify-between items-center drop-shadow-lg">
               <span className="text-lg font-bold text-slate-500 ml-28">
@@ -388,7 +388,7 @@ const Homepage = () => {
             </ul>
           </div>
           <div className="w-1/2 mt-10 flex flex-col gap-4 max-md:w-full">
-            <div className="p-10 bg-white rounded-lg h-full">
+            <div className="p-20 bg-white rounded-lg h-full max-md:p-8">
               <Calendar className="w-8 h-8" />
             </div>
             <div className="p-10 bg-white rounded-lg h-96"></div>
