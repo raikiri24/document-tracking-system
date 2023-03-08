@@ -8,6 +8,7 @@ import { BsChevronDown } from 'react-icons/bs';
 import Homepage from './Homepage';
 import CreateDocument from './CreateDocument';
 import ViewDocument from './ViewDocument';
+import Login from './Login';
 
 const Nav = () => {
   return (
@@ -47,7 +48,8 @@ const Nav = () => {
         </ul>
       </div>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Homepage />} />
         <Route path="/create-document" element={<CreateDocument />} />
         <Route path="/view-document" element={<ViewDocument />} />
       </Routes>
