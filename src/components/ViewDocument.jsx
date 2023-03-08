@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react';
+import { get } from '../functions';
 
 const ViewDocument = () => {
-  return <div className="bg-white px-16">ViewDocument</div>;
+  get(`${import.meta.env.VITE_API_DOCUMENTS}/1`);
+  return <div className="bg-white px-16">{}</div>;
 };
 
 export default ViewDocument;

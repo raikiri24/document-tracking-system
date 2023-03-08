@@ -1,13 +1,13 @@
-import React from "react";
-import navIcon from "../assets/nav-icon-home.svg";
-import { BiSearchAlt } from "react-icons/bi";
-import { RxAvatar } from "react-icons/rx";
-import { IoMdNotifications } from "react-icons/io";
-import { Routes, Route, Link } from "react-router-dom";
-import { BsChevronDown } from "react-icons/bs";
-import Homepage from "./Homepage";
-import CreateDocument from "./CreateDocument";
-import ViewDocument from "./ViewDocument";
+import React from 'react';
+import navIcon from '../assets/nav-icon-home.svg';
+import { BiSearchAlt } from 'react-icons/bi';
+import { RxAvatar } from 'react-icons/rx';
+import { IoMdNotifications } from 'react-icons/io';
+import { Routes, Route, Link } from 'react-router-dom';
+import { BsChevronDown } from 'react-icons/bs';
+import Homepage from './Homepage';
+import CreateDocument from './CreateDocument';
+import ViewDocument from './ViewDocument';
 
 const Nav = () => {
   return (
